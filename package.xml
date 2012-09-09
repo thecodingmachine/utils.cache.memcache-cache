@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+	<displayName>Memcache Cache</displayName>
+	<shortDescription>This package contains a cache mechanism that relies on the Memcached database.
+	For this cache to work, the memcache Pecl package must be enabled.</shortDescription>
+	<docUrl></docUrl>
+	<logo>logo.png</logo>
+	<dependencies>
+		<dependency>
+			<group>utils/cache</group>
+			<name>cache-interface</name>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+	<requires>
+		<require>MemcacheCache.php</require>
+	</requires>
+</package>
