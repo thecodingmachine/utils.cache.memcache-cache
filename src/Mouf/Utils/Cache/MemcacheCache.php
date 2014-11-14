@@ -1,6 +1,7 @@
 <?php
 namespace Mouf\Utils\Cache;
-
+use Mouf\Utils\Log\LogInterface;
+use Psr\Log\LoggerInterface;
 /**
  * This package contains a cache mechanism that relies on Memcache lib.
  * 
@@ -20,10 +21,9 @@ class MemcacheCache implements CacheInterface {
 	
 	/**
 	 * The logger used to trace the cache activity.
+	 * Supports both PSR3 compatible logger and old Mouf logger for compatibility reasons.
 	 *
-	 * @Property
-	 * @Compulsory
-	 * @var LogInterface
+	 * @var LoggerInterface|LogInterface
 	 */
 	public $log;
 	
