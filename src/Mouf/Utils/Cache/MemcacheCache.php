@@ -81,12 +81,12 @@ class MemcacheCache implements CacheInterface {
 				$this->noConnection = true;
 				$this->log->error('Memcache Exception, Impossible to establish connection to memcached server');
 				if($this->crash)
-					throw new Exception('Memcache Exception, Impossible to establish connection to memcached server');
+					throw new \Exception('Memcache Exception, Impossible to establish connection to memcached server');
 				return false;
 			}
 			return true;
 		}
-		throw new Exception("Error no connection set in Memcache cache. Add it in the Mouf interface");
+		throw new \Exception("Error no connection set in Memcache cache. Add it in the Mouf interface");
 	}
 	
 	/**
