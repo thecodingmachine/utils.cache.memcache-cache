@@ -2,6 +2,7 @@
 namespace Mouf\Utils\Cache;
 use Mouf\Utils\Log\LogInterface;
 use Psr\Log\LoggerInterface;
+use Memcache;
 /**
  * This package contains a cache mechanism that relies on Memcache lib.
  * 
